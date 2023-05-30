@@ -1,0 +1,51 @@
+---------Omp codes----------------------------------
+
+ensure g++/ gcc compiler is installed-
+sudo apt show g++
+sudo apt show gcc
+
+if not then install by- 
+sudo apt-get install gcc
+sudo apt-get install g++
+
+ensure openmp library is present-
+sudo apt show libomp-dev
+
+if not then install-
+sudo apt-get install libomp-dev
+
+now to execute open terminal and go to the files directory
+!first set no. of threads-
+export OMP_NUM_THREADS=4
+
+in case of cpp code-
+g++ -fopenmp file.cpp -o file.out
+./file.out
+
+in case of c code-
+gcc -fopenmp file.c -o file.out
+./file.out
+
+
+-----------------To execute cuda code------------------
+
+open .ipynb file on google collab
+
+set runtime to GPU
+Runtime -> change runtime type -> hardware accelerator
+
+execute the file normally.
+
+
+
+6 9
+1 3
+1 5 
+3 5
+3 4
+3 6
+3 2
+2 6
+4 6
+5 6
+
